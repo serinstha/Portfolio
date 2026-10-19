@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serin Shrestha - QA & Software Development Professional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 font-sans">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#hero" class="font-bold text-lg tracking-tight text-brand-600 dark:text-brand-500">Serin Shrestha</a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-brand-600 transition-colors">About</a>
+                <a href="#skills" class="hover:text-brand-600 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-brand-600 transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-brand-600 transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-brand-600 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle theme">
+                    <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                    <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                </button>
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-brand-600 hover:bg-brand-700 rounded-lg transition-colors">
+                    Hire Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 md:pt-44 md:pb-32 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-50 dark:bg-brand-950/50 text-brand-600 dark:text-brand-400 text-xs font-semibold uppercase tracking-wide border border-brand-200 dark:border-brand-800">
+                    <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+                    <span>QA Engineer & Mobile/Frontend Developer</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Hi, I'm <span class="text-brand-600 dark:text-brand-500">Serin Shrestha</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-xl">
+                    Bridging the gap between robust software testing and clean, responsive application development. I build mobile/web apps and make sure they are bulletproof through rigorous QA.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#projects" class="px-6 py-3 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-medium shadow-lg shadow-brand-600/20 transition-all flex items-center space-x-2">
+                        <span>Explore Projects</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://github.com/serinstha" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 font-medium transition-colors flex items-center space-x-2">
+                        <i data-lucide="github" class="w-4 h-4"></i>
+                        <span>GitHub Profile</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-2xl bg-gradient-to-br from-brand-500 to-indigo-600 p-2 shadow-xl">
+                    <div class="w-full h-full bg-slate-900 rounded-xl flex flex-col items-center justify-center p-6 text-center text-white space-y-3">
+                        <i data-lucide="layers" class="w-16 h-16 text-brand-400 animate-bounce"></i>
+                        <h3 class="text-xl font-bold">QA + Frontend Development</h3>
+                        <p class="text-xs text-slate-300">End-to-End Technical Expertise</p>
+                        <div class="flex flex-wrap justify-center gap-1.5 pt-1">
+                            <span class="px-2 py-0.5 bg-slate-800 text-brand-300 rounded text-[10px] font-mono">Selenium</span>
+                            <span class="px-2 py-0.5 bg-slate-800 text-brand-300 rounded text-[10px] font-mono">React Native</span>
+                            <span class="px-2 py-0.5 bg-slate-800 text-brand-300 rounded text-[10px] font-mono">Flutter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight">About Me</h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Dual proficiency in Quality Assurance & Application Development</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <p>
+                        I am an aspiring QA and software professional with a unique advantage: I don't just test software; I build it. My technical foundation spans both sides of the software lifecycle—from creating cross-platform mobile apps (React Native, Flutter) and responsive frontends (React.js) to engineering comprehensive testing frameworks (Selenium POM, Postman API testing, and JMeter performance suites).
+                    </p>
+                    <p>
+                        Graduating with a Bachelor's in Information Technology (BIT) from Patan Multiple Campus and undergoing specialized QA training at Broadway Infosys, I bring a meticulous, problem-solving mindset to every project I take on.
+                    </p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-medium">Test Automation & Manual QA</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-medium">Mobile App Architecture</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-medium">RESTful API Integration</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-medium">Problem Solving</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 shadow-sm">
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-brand-50 dark:bg-brand-950/50 text-brand-600 dark:text-brand-400 rounded-lg">
+                                <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Bachelor's in Information Technology (BIT)</h3>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Patan Multiple Campus, Tribhuvan University</p>
+                                <p class="text-xs font-mono text-brand-600 dark:text-brand-400 mt-1">2078 - 2082 | Patan Dhoka, Lalitpur</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 shadow-sm">
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-brand-50 dark:bg-brand-950/50 text-brand-600 dark:text-brand-400 rounded-lg">
+                                <i data-lucide="award" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Quality Assurance Training</h3>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Broadway Infosys</p>
+                                <p class="text-xs font-mono text-brand-600 dark:text-brand-400 mt-1">Currently Studying</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight">Technical Skills</h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Comprehensive tech stack covering QA, mobile apps, and frontend engineering</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Skill Category 1: QA & Testing -->
+                <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="p-2 bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 rounded-lg">
+                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-semibold text-base">Software Testing</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Manual Testing</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Selenium WebDriver</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">POM Framework</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Defect Reporting</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Regression Testing</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2: API & Performance -->
+                <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="p-2 bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 rounded-lg">
+                            <i data-lucide="activity" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-semibold text-base">API & Performance</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Postman</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">REST/SOAP APIs</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Apache JMeter</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Load Testing</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">JSON Validation</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3: Mobile Development -->
+                <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="p-2 bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 rounded-lg">
+                            <i data-lucide="smartphone" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-semibold text-base">Mobile Development</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">React Native</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Expo</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Flutter (BLOC)</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Firebase</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">GPS Integration</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 4: Frontend & Tools -->
+                <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="p-2 bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 rounded-lg">
+                            <i data-lucide="code" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-semibold text-base">Web & Tools</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">React.js</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">JavaScript / TS</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Java / Python</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Git & GitHub</span>
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-xs rounded-md">Jira</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight">Featured Projects</h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Explore my end-to-end work spanning QA automation, API testing, mobile apps, and web interfaces</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Translation App (Mobile Dev / Internship) -->
+                <div class="flex flex-col rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-1 bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 text-xs font-semibold rounded">Mobile App Development</span>
+                                <i data-lucide="smartphone" class="w-5 h-5 text-slate-400"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">Translation App (Internship)</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Built an app using React Native with Expo for frontend using company-provided RESTful APIs. Implemented API integrations and created dummy components deployed to dashboards and mobile apps with responsive UI.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-slate-200 dark:border-slate-700/60">
+                            <span class="text-xs font-mono text-slate-500">React Native</span>
+                            <span class="text-xs font-mono text-slate-500">Expo</span>
+                            <span class="text-xs font-mono text-slate-500">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: TapAlert (Mobile Dev / Final Year) -->
+                <div class="flex flex-col rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-1 bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 text-xs font-semibold rounded">Final Year Project</span>
+                                <i data-lucide="alert-triangle" class="w-5 h-5 text-slate-400"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">TapAlert Emergency System</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Developed a cross-platform emergency alert app using Flutter (BLOC) with real-time GPS tracking. Integrated Firebase authentication, database, and push/SMS notifications.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-slate-200 dark:border-slate-700/60">
+                            <span class="text-xs font-mono text-slate-500">Flutter (BLOC)</span>
+                            <span class="text-xs font-mono text-slate-500">Firebase</span>
+                            <span class="text-xs font-mono text-slate-500">GPS Tracking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Selenium POM Project (QA Automation) -->
+                <div class="flex flex-col rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-1 bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 text-xs font-semibold rounded">QA Automation</span>
+                                <i data-lucide="folder-git-2" class="w-5 h-5 text-slate-400"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">Selenium POM Framework</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Automated web application tests using Selenium with Page Object Model (POM) and organized the project in a structured framework with separate packages for pages, tests, and utilities.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-slate-200 dark:border-slate-700/60">
+                            <span class="text-xs font-mono text-slate-500">Selenium</span>
+                            <span class="text-xs font-mono text-slate-500">Java</span>
+                            <span class="text-xs font-mono text-slate-500">POM Pattern</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Simple Books API & JMeter (API & Performance QA) -->
+                <div class="flex flex-col rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-1 bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 text-xs font-semibold rounded">API & Performance Testing</span>
+                                <i data-lucide="activity" class="w-5 h-5 text-slate-400"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">Simple Books Demo API</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Tested REST API endpoints in Postman using GET/POST/PATCH/DELETE requests, validating status codes, JSON responses, and response times. Created a JMeter test plan with Thread Groups and HTTP Samplers for load testing.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-slate-200 dark:border-slate-700/60">
+                            <span class="text-xs font-mono text-slate-500">Postman</span>
+                            <span class="text-xs font-mono text-slate-500">JMeter</span>
+                            <span class="text-xs font-mono text-slate-500">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: SauceDemo Testing (Manual & Automation QA) -->
+                <div class="flex flex-col rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-1 bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 text-xs font-semibold rounded">Manual & Auto Testing</span>
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-slate-400"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">SauceDemo Testing Project</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Performed manual testing of login, product selection, sorting, cart, checkout, and logout workflows; created and executed test cases. Practiced web automation with Selenium and reported defects.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-slate-200 dark:border-slate-700/60">
+                            <span class="text-xs font-mono text-slate-500">Manual Testing</span>
+                            <span class="text-xs font-mono text-slate-500">Selenium</span>
+                            <span class="text-xs font-mono text-slate-500">Jira</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: TreksNP (Frontend Web) -->
+                <div class="flex flex-col rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-1 bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 text-xs font-semibold rounded">Frontend Web Development</span>
+                                <i data-lucide="compass" class="w-5 h-5 text-slate-400"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">TreksNP Trekking Website</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Developed a trekking website using HTML, CSS, and JavaScript with interactive itineraries and guides. Designed a responsive and user-friendly interface with multimedia content.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-slate-200 dark:border-slate-700/60">
+                            <span class="text-xs font-mono text-slate-500">HTML/CSS/JS</span>
+                            <span class="text-xs font-mono text-slate-500">Responsive UI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Internship Section -->
+    <section id="experience" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight">Experience</h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Professional background and practical industry exposure</p>
+            </div>
+
+            <div class="relative border-l border-slate-200 dark:border-slate-800 ml-4 space-y-12">
+                <div class="relative pl-8">
+                    <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-brand-600 ring-4 ring-white dark:ring-slate-950"></div>
+                    <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <span class="text-xs font-mono text-brand-600 dark:text-brand-400 font-semibold">2025</span>
+                        <h3 class="text-xl font-bold mt-1">Translation App - Internship Project</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">AUXFIN Development Nepal Pvt. Ltd.</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 mt-3">
+                            Built an app using React Native with Expo for frontend using RESTful API provided by the company. Implemented RESTful APIs, created dummy apps, and implemented them in the dashboard as well as in the apps created to install and display with a responsive UI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight">Get In Touch</h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Let's connect for QA, Mobile Development, or Frontend roles</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <a href="mailto:serinshrestha5@gmail.com" class="p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 text-center hover:border-brand-500 transition-colors">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 flex items-center justify-center">
+                        <i data-lucide="mail" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-semibold mb-1">Email</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 truncate">serinshrestha5@gmail.com</p>
+                </a>
+
+                <a href="tel:+9779866623940" class="p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 text-center hover:border-brand-500 transition-colors">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 flex items-center justify-center">
+                        <i data-lucide="phone" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-semibold mb-1">Phone</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">+977-9866623940</p>
+                </a>
+
+                <div class="p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 text-center">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 flex items-center justify-center">
+                        <i data-lucide="map-pin" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-semibold mb-1">Location</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Patan Dokha, Lalitpur, Nepal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Serin Shrestha. All rights reserved.</p>
+    </footer>
+
+    <!-- Script to Initialize Lucide Icons and Dark Mode Toggle -->
+    <script>
+        lucide.createIcons();
+
+        // Dark mode logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        // Check local storage or system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</body>
+</html>
